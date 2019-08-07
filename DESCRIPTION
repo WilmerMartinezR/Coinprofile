@@ -32,3 +32,5 @@ Suggests:
     rmarkdown,
     R.rsp
 VignetteBuilder: R.rsp
+URL: https://github.com/WilmerMartinezR/Coinprofile
+BugReports: https://github.com/WilmerMartinezR/Coinprofile/issues
