@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+## Coinprofile
+
+The main goal of Coinprofile is to build the 
+  coincident profile according to Martinez, Nieto, and Poncela (2016) 
+  \url{https://www.sciencedirect.com/science/article/pii/S0167715215003764}.
+  This methodology studies the relationship between a couple of
+  time series based on the the set of turning points of each
+  time series. To calculate the 
+  turning points we use Bry and Boschan (1971) 
+  methodology. The coincident profile establishes if two time
+  series are coincident, or one of them leads the second.
+## Installation
+
+You can install the released version of Coinprofile from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("Coinprofile")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Coinprofile)
+## basic example code
+set.seed(123)
+w <- seq(-3, 7, length.out = 100)
+x1 <- sin(pi*w)+rnorm(100,0,0.1)
+x2 <- sin(pi*w-0.1)+rnorm(100,0,0.1)
+coincident_profile(x1, x2, 4, 5, "name.x", "name.y", TRUE, 1991, 2015, 4, 4)
+```
+
+## In this example x leads y three periods
+
+```{r example}
+set.seed(123)
+w <- seq(-3, 7, length.out = 100)
+x <- sin(pi*w)+rnorm(100,0,0.1)
+y <- sin(pi*w-1)+rnorm(100,0,0.1)
+coincident_profile(x, y, 4, 6, "name.x", "name.y", TRUE, 1991, 2015, 4, 4)
+
+```
+

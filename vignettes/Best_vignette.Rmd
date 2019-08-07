@@ -1,0 +1,27 @@
+---
+title: "Choosing a dynamic common factor as a coincident index"
+author: "Martinez and Nieto and Poncela, 2016"
+date: "1/8/2019"
+output: pdf_document
+---
+
+\documentclass{article}
+\usepackage{pdfpages}
+%\VignetteIndexEntry{author2019mypaper}
+
+\begin{document}
+\includepdf[pages=-, fitpaper=true]{mypaper.pdf}
+\end{document}
+
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Coinprofile)
+```
+
