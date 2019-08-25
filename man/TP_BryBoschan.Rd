@@ -19,7 +19,7 @@ TP_BryBoschan(x, frequ = 12, year = 1, month = 1)
 The dates of the turning points
 }
 \description{
-This function calculate the turning points according to the Bry and Boschan (1971) methodology
+Calculates turning points of a time series using the Bry and Boschan (1971) methodology
 }
 \examples{
 x <- rnorm(100)
@@ -27,13 +27,13 @@ TP_BryBoschan(x)
 
 }
 \references{
-Bry, G and Boschan, C (1971).
- "Programmed Selection of Cyclical Turning Points",
- \emph{National Bureau of Economic Research, NBER}, \strong{71}(1), 7-63.
-\url{http://www.nber.org/chapters/c2148}
+Bry, G. and Boschan, C. (1971)
+ Cyclical Analysis of Time Series: Selected Procedures
+ and Computer Programs,
+ \emph{National Bureau of Economic Research, Inc} \bold{71}(1), 7-63.
 
-Burns, A.F., Mitchell, W., (1946).
- "Measuring Business Cycles",
+Burns, A.F. and Mitchell, W. (1946)
+ Measuring Business Cycles,
   \emph{National Bureau of Economic Research, NBER, New York.}
 }
 \author{

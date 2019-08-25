@@ -17,7 +17,7 @@ dif_TP(dato1, dato2, minmax = 1)
 Differences between turning points
 }
 \description{
-This function finds closest differences between two sets of turning points
+Finds closest differences between two sets of turning points
 }
 \details{
 From Martinez et al. (2016): "When the number of turning points in the two
