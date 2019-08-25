@@ -1,6 +1,6 @@
 #' @title Turning points
 #'
-#' @description This function calculate the turning points according to the Bry and Boschan (1971) methodology
+#' @description Calculates turning points of a time series using the Bry and Boschan (1971) methodology
 #' @param x univariate time series
 #' @param frequ Frequency of the x, 12 monthly or 4 quarterly. Default value 12.
 #' @param year The start year of the time series. Default value 1.
@@ -10,12 +10,12 @@
 #' @importFrom stats sd
 #' @export
 #' @author Wilmer O Martinez R
-#' @references Bry, G and Boschan, C (1971).
-#'  "Programmed Selection of Cyclical Turning Points",
-#'  \emph{National Bureau of Economic Research, NBER}, \strong{71}(1), 7-63.
-#' \url{http://www.nber.org/chapters/c2148}
-#' @references Burns, A.F., Mitchell, W., (1946).
-#'  "Measuring Business Cycles",
+#' @references Bry, G. and Boschan, C. (1971)
+#'  Cyclical Analysis of Time Series: Selected Procedures
+#'  and Computer Programs,
+#'  \emph{National Bureau of Economic Research, Inc} \bold{71}(1), 7-63.
+#' @references Burns, A.F. and Mitchell, W. (1946)
+#'  Measuring Business Cycles,
 #'   \emph{National Bureau of Economic Research, NBER, New York.}
 #' @examples
 #' x <- rnorm(100)

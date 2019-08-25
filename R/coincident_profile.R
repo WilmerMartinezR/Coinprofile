@@ -1,7 +1,7 @@
 #' @title Coincident Profile
 #'
-#' @description Returns the coincident profile according to Martinez et al. (2016).
-#'  The criteria is finding the maximum p-value for the lag = 0; otherwise
+#' @description Returns the coincident profile developed by Martinez et al. (2016).
+#'  The ideal result is finding the maximum p-value for the lag = 0; otherwise
 #'  maximum p-value for negative lags suggest leading from x to y, or maximum
 #'  p-value for positive lags suggest leading from y to x.
 #' @param x Univariate time series
@@ -32,13 +32,13 @@
 #'  the number of turning points considered to the calculus of the
 #'  coincident profile (MainLag).
 #' @author Wilmer O Martinez R
-#' @references Martinez, W and Nieto, Fabio H and Poncela, P (2016).
-#'  "Choosing a dynamic common factor as a coincident index."
+#' @references Martinez, W and Nieto, Fabio H and Poncela, P (2016)
+#'  "Choosing a dynamic common factor as a coincident index",
 #'  \emph{Statistics and Probability Letters}, (109), 89-98.
-#'  \url{https://www.sciencedirect.com/science/article/pii/S0167715215003764}.
-#' @references Banerji, A., (1999).
+#'  \url{http://dx.doi.org/10.1016/j.spl.2015.11.008}.
+#' @references Banerji, A., (1999)
 #'  "The lead profile and others non-parametrics tools to evaluate survey
-#'  series as leading indicators".
+#'  series as leading indicators",
 #'  \emph{Survey Data for Industry, Research and Economic Policy,
 #'   selected papers presented at the 24th CIRET Conference, Willington, New Zealand.}
 #' @examples
@@ -113,7 +113,9 @@ coincident_profile <- function(x, y, frequ = 12, MLag = 6, nvar1 = "name.x", nva
 
         #windows()
         #quartz(width=10,height=6)
-        par(las =1,mfrow=c(2,2))
+
+        oldpar <- par(las =1,mfrow=c(2,2))
+        on.exit(par(oldpar))
 
         plot(x, type="l",main=tit1, ylab="", xlab="Months", axes=FALSE)
         axis(2)

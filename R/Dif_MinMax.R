@@ -1,6 +1,6 @@
 #' @title Closest differences
 #'
-#' @description This function finds closest differences between two sets of turning points
+#' @description Finds closest differences between two sets of turning points
 #' @param dato1 A vector of data
 #' @param dato2 A vector of data2
 #' @param minmax Indicator variable 1 minimum, 2 maximum
